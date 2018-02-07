@@ -1,0 +1,6 @@
+.slider-intro, .slider-caption, .slider-caption-2, .slider-link{
+	display: none !important;
+}
+.kopa-intro-4-widget a{
+	min-width: 140px;
+}

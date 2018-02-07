@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- Renders all pages in edge mode in IE-->
+
+    <title></title>
+
+    @Styles.Render("~/bundles/SiteCss")
+    @Scripts.Render("~/bundles/SiteJs")
+</head>
+<body>
+    <header class="kopa-header style2">
+        <div class="kopa-header-top style2"> 
+            <div class="wrapper"> 
+                <div class="header-top-left">
+                    <div class="kopa-hotline">
+                        <p class="">call now: <a href="callto:12345678">(1984) 310-0584</a></p>
+                    </div>
+                    <div class="kopa-social-links style1">
+                        <ul class="clearfix">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-instagram"></a></li>
+                            <li><a href="#" class="fa fa-google-plus"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- header-top-left -->
+
+                <div class="header-top-right"> 
+                    <div class="kopa-user">
+                        <ul class="clearfix">
+                            <li><a href="#">Login</a></li>
+                            <li>&nbsp;/&nbsp;</li>
+                            <li><a href="#">Register</a></li>
+                            <li>&nbsp;&nbsp;</li>
+                            <li>@Html.ActionLink(".", "Index", "Login", new { area = "ControlPanel" }, new { @style = "color:#ffc619;" })</li>
+                        </ul>
+                    </div>
+
+                    <div class="sb-search-wrapper">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input" placeholder=" " type="text" value="" name="search" id="search">
+                                <button type="submit" class="search-submit"><span class="fa fa-search"></span></button>
+                                <span class="sb-icon-search fa fa-search"></span>
+                            </form>
+                        </div><!--sb-search-->
+                    </div><!--sb-search-wrapper-->
+
+                </div>
+                <!-- header-top-right -->
+
+            </div>
+            <!-- wrapper -->
+
+        </div>
+        <!-- kopa-header-top -->
+
+        <div class="kopa-header-bottom style2 kopa-sticky-menu">
+
+            <div class="wrapper">
+
+                <div class="kopa-logo">
+                    <a href="#"><img src="images/logo-3.png" alt="logo"></a>
+                </div>
+                <!-- logo -->
+
+                <nav class="kopa-main-nav">
+                    <ul class="main-menu sf-menu">
+                        <li class="current-menu-item">
+                            <a href="index1.html">Home</a>
+                            <ul class="sub-menu">
+                                <li class="current-menu-item">
+                                    <a href="index1.html">Home Style 1</a>
+                                </li>
+                                <li>
+                                    <a href="index2.html">Home Style 2</a>
+                                </li>
+                                <li>
+                                    <a href="index3.html">Home Style 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blog.html">blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog1.html">blog style 1</a></li>
+                                <li><a href="blog2.html">blog style 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html">Page</a>
+                            <ul class="sub-menu">
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="element.html">Elements</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li>
+                                    <a href="single1.html">Single Page</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="single1.html">Single style 1</a></li>
+                                        <li><a href="single2.html">Single style 2</a></li>
+                                        <li><a href="single-portfolio1.html">Single portfolio 1</a></li>
+                                        <li><a href="single-portfolio2.html">Single portfolio 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="portfolio1.html">portfolio</a>
+                            <ul class="sub-menu">
+                                <li><a href="portfolio1.html">portfolio style 1</a></li>
+                                <li><a href="portfolio2.html">portfolio style 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="shop.html">shop page</a></li>
+                                <li><a href="shop-detail.html">shop detail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--/end main-nav-->
+
+                <nav class="main-nav-mobile style1">
+                    <a class="pull"><i class="fa fa-bars"></i></a>
+                    <ul class="main-menu-mobile">
+                        <li class="current-menu-item">
+                            <a href="index1.html">Home</a>
+                            <ul class="sub-menu">
+                                <li class="current-menu-item">
+                                    <a href="index1.html">Home Style 1</a>
+                                </li>
+                                <li>
+                                    <a href="index2.html">Home Style 2</a>
+                                </li>
+                                <li>
+                                    <a href="index3.html">Home Style 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blog.html">blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog1.html">blog style 1</a></li>
+                                <li><a href="blog2.html">blog style 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html">Page</a>
+                            <ul class="sub-menu">
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="element.html">Elements</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li>
+                                    <a href="single1.html">Single Page</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="single1.html">Single style 1</a></li>
+                                        <li><a href="single2.html">Single style 2</a></li>
+                                        <li><a href="single-portfolio1.html">Single portfolio 1</a></li>
+                                        <li><a href="single-portfolio2.html">Single portfolio 2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="portfolio1.html">portfolio</a>
+                            <ul class="sub-menu">
+                                <li><a href="portfolio1.html">portfolio style 1</a></li>
+                                <li><a href="portfolio2.html">portfolio style 2</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="shop.html">shop page</a></li>
+                                <li><a href="shop-detail.html">shop detail</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--/end main-nav-->
+
+            </div>
+            <!-- wrapper -->
+
+        </div>
+        <!-- kopa-header-bottom -->
+
+    </header>
+    <!-- kopa-page-header -->
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
